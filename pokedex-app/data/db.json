@@ -2,39 +2,27 @@
   "pokemons": [
     {
       "name": "bulbasaur",
-      "id": 1,
-      "isCaught": true,
-      "date": "2021-09-07T11:22:50.902Z"
+      "id": 1
     },
     {
       "name": "ivysaur",
-      "id": 2,
-      "isCaught": true,
-      "date": "2021-09-07T14:38:06.527Z"
+      "id": 2
     },
     {
       "name": "venusaur",
-      "id": 3,
-      "isCaught": true,
-      "date": "2021-09-07T15:42:59.374Z"
+      "id": 3
     },
     {
       "name": "charmander",
-      "id": 4,
-      "isCaught": true,
-      "date": "2021-09-07T15:43:00.021Z"
+      "id": 4
     },
     {
       "name": "charmeleon",
-      "id": 5,
-      "isCaught": true,
-      "date": "2021-09-07T15:43:02.754Z"
+      "id": 5
     },
     {
       "name": "charizard",
-      "id": 6,
-      "isCaught": true,
-      "date": "2021-09-07T17:05:08.484Z"
+      "id": 6
     },
     {
       "name": "squirtle",
@@ -50,9 +38,7 @@
     },
     {
       "name": "caterpie",
-      "id": 10,
-      "isCaught": true,
-      "date": "2021-09-07T17:05:26.340Z"
+      "id": 10
     },
     {
       "name": "metapod",
