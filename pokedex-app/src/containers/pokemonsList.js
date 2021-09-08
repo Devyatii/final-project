@@ -67,7 +67,7 @@ const PokemonsList = ({ catchQuery }) => {
             return (
                 <div>
                     <h1 className="is-size-3-mobile is-size-2-desktop title ">Waiting for pokemons!</h1>
-                    <progress class="progress is-small is-success" max="100">15%</progress>
+                    <progress className="progress is-small is-success" max="100">15%</progress>
                 </div>
             )
         }

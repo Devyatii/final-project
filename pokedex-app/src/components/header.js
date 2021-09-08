@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-
+  
   const [isActive, setActive] = useState('navbar-menu');
   const handleBurgerMenu = () => {
     isActive === 'navbar-menu' ? setActive('navbar-menu is-active') : setActive('navbar-menu');
