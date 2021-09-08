@@ -1,5 +1,4 @@
 import React from 'react';
-import { withErrorBoundary } from 'react-error-boundary';
 import PokemonsList from '../containers/pokemonsList';
 
 const Wrapper = ({ catchQuery }) => {
@@ -17,6 +16,5 @@ const Wrapper = ({ catchQuery }) => {
     )
   };
 
-export default withErrorBoundary(Wrapper, {
-    fallback: <h1 className="is-size-3-mobile is-size-2-desktop title">Sorry, we can't load Pokemons now :(</h1>
-});
+  export default Wrapper;
+  

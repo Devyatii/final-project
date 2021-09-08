@@ -25,7 +25,7 @@ const PokemonsList = ({ catchQuery }) => {
                     setPokemons([...pokemons, ...response.data]);
                     setCurrentPage(prevState => prevState + 1);
                 })
-                // .catch(err => err)
+                .catch(err => err)
                 .finally(() => setFetching(false))    
         }
       
@@ -46,19 +46,34 @@ const PokemonsList = ({ catchQuery }) => {
         )
     }
 
-    return (
-        <Fragment>
-            {filterPokemonList(pokemons, catchQuery)
-            .map(({ id, name, isCaught }) => 
-                <PokemonCard
-                    key={id + name} 
-                    id={id}
-                    name={name}
-                    isCaught={isCaught}
-                />
-            )}
-        </Fragment>
-    )
+    const isPomemonListEmpty = (filterPokemonsList) => {
+        let pokemonsList = filterPokemonsList;
+
+        if (pokemonsList.length) {
+            return (
+                <Fragment>
+                    {pokemonsList
+                    .map(({ id, name, isCaught }) => 
+                        <PokemonCard
+                            key={id + name} 
+                            id={id}
+                            name={name}
+                            isCaught={isCaught}
+                        />
+                    )}
+                </Fragment>
+            ) 
+        } else {
+            return (
+                <div>
+                    <h1 className="is-size-3-mobile is-size-2-desktop title ">Waiting for pokemons!</h1>
+                    <progress class="progress is-small is-success" max="100">15%</progress>
+                </div>
+            )
+        }
+    }
+
+    return isPomemonListEmpty(filterPokemonList(pokemons, catchQuery));
 };
 
 export default PokemonsList;

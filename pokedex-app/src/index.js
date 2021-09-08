@@ -7,7 +7,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import AllPokemons from './pages/allPokemons';
 import MyPokemons from './pages/myPokemons';
 import PokemonPage from './pages/pokemonPage';
-import ErrorMessage from './components/error'
+import ErrorMessage from './components/error';
+
 
 ReactDOM.render((
   <BrowserRouter>
@@ -15,10 +16,12 @@ ReactDOM.render((
       <Switch>
         <Route exact path='/' component={AllPokemons} />
         <Route exact path='/myPokemons' component={MyPokemons} />
-        <Route exact path='/:id' component={PokemonPage} />
-        <Route component={ErrorMessage} />
+        <Route path='/:id' component={PokemonPage} />
+        <Route path='*' component={ErrorMessage} />
       </Switch>
     </App>
   </BrowserRouter>
 ), document.getElementById('root'));
+
 registerServiceWorker();
+

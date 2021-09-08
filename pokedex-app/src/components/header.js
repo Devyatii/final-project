@@ -23,7 +23,7 @@ const Header = () => {
         <div className={isActive} id="nav-links">
           <div className="navbar-end">
             <NavLink className="navbar-item" activeClassName="is-active" exact to='/'>All Pokemons</NavLink>
-            <NavLink className="navbar-item" activeClassName="is-active" to='/myPokemons'>Caught Pokemons</NavLink>
+            <NavLink className="navbar-item" activeClassName="is-active" exact to='/myPokemons'>Caught Pokemons</NavLink>
           </div> 
         </div>
       </nav>

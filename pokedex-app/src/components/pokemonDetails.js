@@ -27,7 +27,7 @@ const PokemonDetails = ({ name, id, date, isCaught }) => {
       <section className="section">
         <div className="container">
           <div className="columns mt-5 is-vcentered is-multiline">
-            <div className="column is-6-tablet is-6-desktop has-text-centered">
+            <div className="column is-5-tablet is-5-desktop has-text-centered">
               <PokemonImg name={name} id={id} /> 
             </div>
             <div className="column is-6-tablet is-6-desktop has-text-centered-mobile">
