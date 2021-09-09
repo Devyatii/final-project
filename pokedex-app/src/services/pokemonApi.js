@@ -2,8 +2,8 @@ import axios from 'axios';
 
 const DB_PATH = 'http://localhost:8000/pokemons';
 const PAGE_LIMIT = 12;
-const IMG_PATH = './pokemons/';
-const DEFAULT_IMG_PATH = 'defaultPokemon.png';
+const IMG_PATH = '../pokemons/';
+const DEFAULT_IMG_PATH = '../defaultPokemon.png';
 
 class PokemonApiService {
 
@@ -12,7 +12,7 @@ class PokemonApiService {
     }
 
     fetchPokemonImg(id) {
-        return (id <= 720 || id > 1) ? IMG_PATH + id +'.png' : DEFAULT_IMG_PATH
+        return (id <= 720 && id >= 1) ? IMG_PATH + id +'.png' : DEFAULT_IMG_PATH
     }
 
     getPokemonData(id) {

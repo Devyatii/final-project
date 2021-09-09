@@ -9,7 +9,7 @@ const PokemonCard = ({ name, id, isCaught }) => {
   return (
         <div className="column is-4-tablet is-3-desktop">
           <div className="card">
-            <Link className="is-hover" to={`/${id}`} aria-label={`link to ${name} page`}>
+            <Link className="is-hover" to={`/pokemons/${id}`} aria-label={`link to ${name} page`}>
               <div className="card-content">
                 <h2 className="title is-size-5 has-text-centered is-capitalized">{name}</h2>
               </div>

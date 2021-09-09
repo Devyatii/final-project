@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <nav className="navbar has-shadow is-success is-fixed-top" aria-label="main navigation">
         <div className="navbar-brand">
-          <img src='pokedexLogo.png' alt='pokedex-logo' style={{ maxHeight: '70px' }} className="navbar-item py-2 px-4"/>
+          <img src='../pokedexLogo.png' alt='pokedex-logo' style={{ maxHeight: '70px' }} className="navbar-item py-2 px-4"/>
           <a className="navbar-burger" aria-label="main navigation" onClick={handleBurgerMenu}>
             <span></span>
             <span></span>

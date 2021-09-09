@@ -16,7 +16,7 @@ ReactDOM.render((
       <Switch>
         <Route exact path='/' component={AllPokemons} />
         <Route exact path='/myPokemons' component={MyPokemons} />
-        <Route path='/:id' component={PokemonPage} />
+        <Route path='/pokemons/:id' component={PokemonPage} />
         <Route path='*' component={ErrorMessage} />
       </Switch>
     </App>

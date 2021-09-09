@@ -31,11 +31,11 @@ const PokemonDetails = ({ name, id, date, isCaught }) => {
               <PokemonImg name={name} id={id} /> 
             </div>
             <div className="column is-6-tablet is-6-desktop has-text-centered-mobile">
-                {id && <h1 className="is-size-3-mobile is-size-2-desktop title">MY NAME IS {name.toUpperCase()}</h1>}
-                {id && <div className="is-size-4 mb-1 has-text-weight-semibold">ID: #{id}</div>}
-                {id && <div className="is-size-4 mb-1 has-text-weight-semibold">{getCatchStatus(isCaught)}</div>}
-                {id && <div className="is-size-4 mb-1 has-text-weight-semibold">{getCatchDate(date)}</div>}
-                {id && <button className="button is-success" onClick={() => window.history.back()}>Return</button>}
+              {id && <h1 className="is-size-3-mobile is-size-2-desktop title">MY NAME IS {name.toUpperCase()}</h1>}
+              {id && <div className="is-size-4 mb-1 has-text-weight-semibold">ID: #{id}</div>}
+              {id && <div className="is-size-4 mb-1 has-text-weight-semibold">{getCatchStatus(isCaught)}</div>}
+              {id && <div className="is-size-4 mb-1 has-text-weight-semibold">{getCatchDate(date)}</div>}
+              {id && <button className="button is-success" onClick={() => window.history.back()}>Return</button>}
             </div>
           </div>
         </div>
